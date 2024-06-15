@@ -1,13 +1,16 @@
-import { SendFilesSection } from './components/SendFilesSection'
+import { Header } from './components/header';
+import { Outlet } from 'react-router-dom';
 import './index.css'
+
 function App() {
 
   return (
-    <>
-      <div  className="flex min-h-screen flex-col items-center justify-between p-24">
-        <SendFilesSection />
+    <div>
+      <Header />
+      <div className="flex min-h-screen flex-col items-center justify-between p-24">
+        <Outlet/>
       </div>
-    </>
+    </div>
   )
 }
 
