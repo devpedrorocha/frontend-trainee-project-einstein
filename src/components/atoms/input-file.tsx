@@ -1,10 +1,11 @@
-import { Input } from "@/components/input"
-import { Label } from "@/components/label"
+import { Input } from "@/components/atoms/input"
+import { Label } from "@/components/atoms/label"
 
 interface InputFileProps {
     id: string
     label: string
     name: string
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     register: any
 }
 

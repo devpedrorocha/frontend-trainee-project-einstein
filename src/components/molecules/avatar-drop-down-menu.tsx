@@ -1,11 +1,13 @@
-import { Avatar, AvatarFallback } from "./ui/avatar";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuSubTrigger, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { useNavigate } from "react-router-dom";
+import { Avatar, AvatarFallback } from "../ui/avatar";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "../ui/dropdown-menu";
 import { FaUser } from "react-icons/fa";
 
-interface ComponentNameProps {
 
-}
-export function AvatarDropDownMenu(props : ComponentNameProps){
+
+export function AvatarDropDownMenu(){
+    const navigation = useNavigate()
+
     return(
             <DropdownMenu modal={false} >
                 <DropdownMenuTrigger>
@@ -19,7 +21,7 @@ export function AvatarDropDownMenu(props : ComponentNameProps){
                     <DropdownMenuLabel>Minha conta</DropdownMenuLabel>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem>Perfil</DropdownMenuItem>
-                    <DropdownMenuItem>Sair</DropdownMenuItem>
+                    <DropdownMenuItem onClick={() => navigation('/login')}>Sair</DropdownMenuItem>
                 </DropdownMenuContent>
             </DropdownMenu>
     )

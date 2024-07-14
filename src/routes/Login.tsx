@@ -1,9 +1,13 @@
 
-import { Button } from "@/components/button"
-import { Input } from "@/components/input"
-import { Label } from "@/components/label"
+import { Button } from "@/components/atoms/button"
+import { Input } from "@/components/atoms/input"
+import { Label } from "@/components/atoms/label"
+import { useNavigate } from "react-router-dom"
 
 export function Login() {
+
+  const navigation = useNavigate();
+
   return (
     <div className="w-full min-h-screen lg:mt-0 lg:grid lg:grid-cols-2">
       <div className="flex items-center justify-center  py-12 h-screen">
@@ -32,9 +36,9 @@ export function Login() {
               <div className="flex items-center">
                 <Label htmlFor="password">Senha</Label>
               </div>
-              <Input id="password" type="password" required />
+              <Input id="password" placeholder="......" type="password" required />
             </div>
-            <Button type="submit" className="w-full bg-black lg:bg-primary">
+            <Button type="submit" onClick={()=> navigation('/home')} className="w-full bg-black lg:bg-primary">
               Login
             </Button>
           </div>

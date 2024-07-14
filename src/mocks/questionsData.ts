@@ -16,8 +16,8 @@ export const questionData = [
         questionLabel: 'Questão 2',
         subject: 'Matemática',
         data: [
-            { letter: 'A', count: 32 },
-            { letter: 'B', count: 24 },
+            { letter: 'A', count: 21 },
+            { letter: 'B', count: 17 },
             { letter: 'C', count: 15 },
             { letter: 'D', count: 56 },
             { letter: 'E', count: 29 }
@@ -29,11 +29,11 @@ export const questionData = [
         subject: 'Matemática',
 
         data: [
-            { letter: 'A', count: 32 },
+            { letter: 'A', count: 10 },
             { letter: 'B', count: 24 },
-            { letter: 'C', count: 15 },
-            { letter: 'D', count: 56 },
-            { letter: 'E', count: 29 }
+            { letter: 'C', count: 14 },
+            { letter: 'D', count: 43 },
+            { letter: 'E', count: 12 }
         ]
     },
     {
@@ -42,11 +42,11 @@ export const questionData = [
         subject: 'Matemática',
 
         data: [
-            { letter: 'A', count: 32 },
-            { letter: 'B', count: 24 },
+            { letter: 'A', count: 4 },
+            { letter: 'B', count: 32 },
             { letter: 'C', count: 15 },
-            { letter: 'D', count: 56 },
-            { letter: 'E', count: 29 }
+            { letter: 'D', count: 16 },
+            { letter: 'E', count: 11 }
         ]
     },
     {
@@ -55,11 +55,11 @@ export const questionData = [
         subject: 'Matemática',
 
         data: [
-            { letter: 'A', count: 32 },
-            { letter: 'B', count: 24 },
-            { letter: 'C', count: 15 },
-            { letter: 'D', count: 56 },
-            { letter: 'E', count: 29 }
+            { letter: 'A', count: 20 },
+            { letter: 'B', count: 45 },
+            { letter: 'C', count: 12 },
+            { letter: 'D', count: 8 },
+            { letter: 'E', count: 9 }
         ]
     },
     {
@@ -68,7 +68,7 @@ export const questionData = [
         subject: 'Matemática',
 
         data: [
-            { letter: 'A', count: 32 },
+            { letter: 'A', count: 18 },
             { letter: 'B', count: 24 },
             { letter: 'C', count: 15 },
             { letter: 'D', count: 56 },
@@ -81,10 +81,10 @@ export const questionData = [
         subject: 'Matemática',
 
         data: [
-            { letter: 'A', count: 32 },
+            { letter: 'A', count: 12 },
             { letter: 'B', count: 24 },
-            { letter: 'C', count: 15 },
-            { letter: 'D', count: 56 },
+            { letter: 'C', count: 3 },
+            { letter: 'D', count: 32 },
             { letter: 'E', count: 29 }
         ]
     },

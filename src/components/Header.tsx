@@ -1,8 +1,12 @@
-import { AvatarDropDownMenu } from "./avatar-drop-down-menu";
+import { useNavigate } from "react-router-dom";
+import { AvatarDropDownMenu } from "./molecules/avatar-drop-down-menu";
 
 
 
 export function Header(){
+
+    const navigate = useNavigate()
+
     return(
         <header className='w-full h-18 fixed bg-white shadow-md z-30'>
             <div className='flex justify-between items-center py-4 px-6'>
@@ -18,17 +22,17 @@ export function Header(){
                         />
                     </div>
                     <div className="ml-6 flex gap-8">
-                        <p className="font-bold">
+                        <p className="font-bold" onClick={() => navigate('/home')}>
                             <a href="">
                                 Início
                             </a>
                         </p>
-                        <p className="font-bold">
+                        <p className="font-bold" onClick={() => navigate('/create-report')}>
                             <a href="">
                                 Relatórios
                             </a>
                         </p>
-                        <p className="font-bold">
+                        <p className="font-bold" onClick={() => navigate('/teachers')}>
                             <a href="">
                                 Professores
                             </a>
