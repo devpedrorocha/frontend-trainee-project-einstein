@@ -13,3 +13,18 @@ Para estilização foi utilizado o TailwindCss por sua simplicidade e por auxili
 
 ### Gráficos
 Utilizei a biblioteca Recharts para a criação dos gráficos.
+
+
+## Execução do Projeto
+
+A versão do Node utilizada foi a 20.14.0
+
+```bash
+# Instalando dependências
+npm install
+```
+
+```bash
+# Rodando o projeto
+npm run dev
+```
