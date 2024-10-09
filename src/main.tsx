@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     path: '/',
     element: (
       <PrivateRoute>
-        <App /> {/* Wrap the routes with App component */}
+        <App />
       </PrivateRoute>
     ),
     children: [

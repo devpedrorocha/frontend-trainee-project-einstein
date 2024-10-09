@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { AvatarDropDownMenu } from "./molecules/avatar-drop-down-menu";
+import { AvatarDropDownMenu } from "./avatar-drop-down-menu";
 
 
 
@@ -8,8 +8,8 @@ export function Header(){
     const navigate = useNavigate()
 
     return(
-        <header className='w-full h-18 fixed bg-white shadow-md z-30'>
-            <div className='flex justify-between items-center py-4 px-6'>
+        <header className='fixed z-30 w-full bg-white shadow-md h-18'>
+            <div className='flex items-center justify-between px-6 py-4'>
                 <div className='flex items-center gap-2'>
                     <div className='flex items-center gap-2 cursor-pointer'>
                         <img
@@ -21,7 +21,7 @@ export function Header(){
                         src="https://vest.einsteinfloripa.com.br/images/logo.png"
                         />
                     </div>
-                    <div className="ml-6 flex gap-8">
+                    <div className="flex gap-8 ml-6">
                         <p className="font-bold" onClick={() => navigate('/home')}>
                             <a href="">
                                 Início
@@ -41,7 +41,6 @@ export function Header(){
                     </div>
                 </div>
                 <div className="mr-12">
-                    
                     <AvatarDropDownMenu />
                 </div>
             </div>

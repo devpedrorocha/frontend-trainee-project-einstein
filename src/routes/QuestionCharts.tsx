@@ -3,7 +3,7 @@ import { ArrowRightFromLine } from 'lucide-react';
 import { BarChart, Bar, ResponsiveContainer, Tooltip, YAxis, XAxis } from 'recharts';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { Pagination } from '@/components/Pagination';
+import { Pagination } from '@/components/molecules/pagination';
 
 // const SIZE = 8
 

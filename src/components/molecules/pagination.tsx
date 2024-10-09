@@ -6,7 +6,6 @@ interface PaginationProps {
 }
 export const Pagination = ({questionsPerPage, totalQuestions, paginate}: PaginationProps) => {
 
-
     const questionNumbers = [];
     for (let i = 1; i <= Math.ceil(totalQuestions / questionsPerPage); i++) {
         questionNumbers.push(i);
@@ -14,10 +13,10 @@ export const Pagination = ({questionsPerPage, totalQuestions, paginate}: Paginat
 
   return (
     <nav className="w-full px-6">
-      <ul className="flex gap-2 justify-end">
+      <ul className="flex justify-end gap-2">
         {
             questionNumbers.map(number => (
-                <li onClick={() => paginate(number)} key={number} className="cursor-pointer border text-lg rounded px-4 py-2 hover:opacity-80">
+                <li onClick={() => paginate(number)} key={number} className="px-4 py-2 text-lg border rounded cursor-pointer hover:opacity-80">
                     <a onClick={() => paginate(number)} className="">
                         {number}
                     </a>
